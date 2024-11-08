@@ -88,99 +88,59 @@ video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
 body {
     line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBECEE;
+    color: #002F52;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* ------------------------------------ */
-
-/* Definições de variáveis */
-:root {
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
-    --laranja: #EB9B00;
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
-    --azul: #002F52;
-}
-
-/* Estilos gerais do corpo */
-body {
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--azul);
-}
-
-/* Cabeçalho */
 header {
-    background-color: var(--azul);
-    color: var(--branco);
+    background-color: #002F52;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Banner */
 .banner {
-    background: var(--azul-degrade);
-    color: var(--branco);
-    padding: 40px 0;
+    background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    color: white;
     text-align: center;
+    padding: 40px 0;
 }
 
-.banner__titulo {
+.banner h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.banner__texto {
+.banner p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.banner__pesquisa {
+.banner input {
     padding: 10px;
     font-size: 1rem;
-    width: 80%;
+    width: 60%;
     max-width: 400px;
 }
 
@@ -190,56 +150,70 @@ header {
     text-align: center;
 }
 
-.carrossel__titulo {
+.carrossel h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Tópicos visitados */
-.tópicos {
-    background-color: var(--branco);
-    padding: 30px;
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.tópicos__titulo {
+.swiper-slide {
+    padding: 20px;
+    background-color: #326589;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Tópicos */
+.tópicos {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.tópicos h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.tópicos__lista {
+.tópicos ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.tópicos__item {
+.tópicos li {
     margin: 5px 15px;
 }
 
-.tópicos__link {
+.tópicos a {
     text-decoration: none;
-    color: var(--azul);
+    color: #002F52;
     font-weight: 500;
 }
 
 /* Seção de Contato */
 .contato {
-    background-color: var(--branco);
+    background-color: white;
     padding: 40px 20px;
     text-align: center;
 }
 
-.contato__titulo {
+.contato h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
 }
 
-.contato__texto {
+.contato p {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-.contato__email {
+.contato input {
     padding: 10px;
     font-size: 1rem;
     width: 60%;
@@ -248,13 +222,13 @@ header {
 
 /* Rodapé */
 footer {
-    background-color: var(--azul);
-    color: var(--branco);
+    background-color: #002F52;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
-.rodapé__titulo {
-    font-size: 1.5rem;
-    font-weight: 500;
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
 }
