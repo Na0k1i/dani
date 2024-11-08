@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natureza Viva</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Florestas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Montanhas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fauna</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ecologia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Caminhadas</a>
+        </li>
+      </ul>
+      <img src="img/LogoNatureza.svg" alt="Logo Natureza Viva" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Aventure-se na natureza!</h2>
+    <p class="banner__texto">Explore o mundo natural e descubra as maravilhas do planeta.</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você quer explorar hoje?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novas Avenidas Naturais</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Floresta.svg" alt="Floresta exuberante"></div>
+        <div class="swiper-slide"><img src="img/Montanhas.svg" alt="Montanhas majestosas"></div>
+        <div class="swiper-slide"><img src="img/Animal.svg" alt="Vida selvagem no habitat natural"></div>
+        <div class="swiper-slide"><img src="img/Rio.svg" alt="Rio cristalino fluindo pela floresta"></div>
+        <div class="swiper-slide"><img src="img/Paisagem.svg" alt="Paisagem tranquila de campo"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Explorando as Florestas Amazônicas</h2>
+          <p class="descrição__texto">
+            Um guia completo sobre a maior floresta tropical do mundo e sua biodiversidade.
+          </p>
+        </div>
+        <img src="img/FlorestaAmazonia.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Aventuras ao Ar Livre</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Caminhada.svg" alt="Trilha de caminhada na montanha"></div>
+        <div class="swiper-slide"><img src="img/Acampamento.svg" alt="Acampamento ao lado de um lago"></div>
+        <div class="swiper-slide"><img src="img/Observacao.svg" alt="Observação de aves em uma floresta"></div>
+        <div class="swiper-slide"><img src="img/Canoagem.svg" alt="Canoagem em um rio calmo"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Atividade ao Ar Livre</h3>
+          <h2 class="descrição__titulo-livro">Caminhadas em Parques Nacionais</h2>
+          <p class="descrição__texto">
+            Dicas e trilhas para explorar os parques nacionais mais belos do mundo.
+          </p>
+        </div>
+        <img src="img/Trilha.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Florestas Tropicais</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Montanhas e Picos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ecossistemas</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Aves</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Caminhadas e Trilhas</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades da natureza!</h2>
+    <p class="contato__texto">
+      Atualizações sobre novos livros, explorações, trilhas e muito mais!
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Natureza Viva</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
